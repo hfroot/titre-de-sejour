@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "start": "node start.js"
+  },
+  "dependencies": {
+    "playwright": "^1.12.2"
+  }
+}
