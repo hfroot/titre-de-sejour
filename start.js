@@ -29,9 +29,9 @@ const { webkit } = require('playwright');
     if(formText.includes("Il n'existe plus de plage horaire")) {
       console.log("yep, nothing still")
     } else {
-      // Notify me immediately with desk[idx]
+      console.log("free spot at choice #", idx+1)
+      await page.screenshot({ path: `free.png` });
     }
-    await page.screenshot({ path: `example.png` });
   }
   // TODO: tweet that the program has run, with X unsuccessful
   // ---------------------
